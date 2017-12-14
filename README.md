@@ -1,4 +1,5 @@
 # A Simple Java Web App (Maven + Jetty) with Containerize
+Readme update 1.1
 
 ## Build
 ```shell
