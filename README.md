@@ -1,4 +1,4 @@
-# A Simple Java Web App with Containerize
+# A Simple Java Web App (Maven + Jetty) with Containerize
 
 ## Build
 ```shell
