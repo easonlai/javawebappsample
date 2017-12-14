@@ -17,7 +17,7 @@ To test your run locally (Health Ping)
 ```shell
 http://localhost:8080<or your port>/api/calculator/ping
 ```
-To test your run locally (Functions call with aarithmetic operator +, -, *, /)
+To test your run locally (Web Service Function Call With Arithmetic operator +, -, *, /)
 ```shell
 http://localhost:8080/api/calculator/add?x=6&y=6
 http://localhost:8080/api/calculator/sub?x=10&y=2
