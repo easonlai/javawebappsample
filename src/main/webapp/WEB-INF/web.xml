@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
-    <display-name>ms.kenchen.calculator</display-name>
+    <display-name>ms.easonlai.calculator</display-name>
     <servlet>
         <servlet-name>Calculator Service</servlet-name>
         <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
-        <!-- Register resources and providers under ms.kenchen package. -->
+        <!-- Register resources and providers under ms.easonlai package. -->
         <init-param>
             <param-name>jersey.config.server.provider.packages</param-name>
-            <param-value>ms.kenchen</param-value>
+            <param-value>ms.easonlai</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
