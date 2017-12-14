@@ -1,4 +1,4 @@
-package ms.kenchen.Calculator;
+package ms.easonlai.Calculator;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
