@@ -17,6 +17,12 @@ To test your run locally
 ```shell
 http://localhost:8080<or your port>/api/calculator/ping
 ```
+```shell
+http://localhost:8080/api/calculator/add?x=6&y=6
+http://localhost:8080/api/calculator/sub?x=10&y=2
+http://localhost:8080/api/calculator/mul?x=6&y=6
+http://localhost:8080/api/calculator/div?x=12&y=2
+```
 
 ## Debug Locally
 ```shell
@@ -24,7 +30,7 @@ set MAVEN_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,address=8000,suspe
 mvn jetty:run
 ```
 
-## Containerize Your Web App
+## Containerize
 1. Build a docker image using `Dockerfile`:
    ```
    docker build -t calculator .
@@ -33,4 +39,5 @@ mvn jetty:run
    ```
    docker run --rm -p 8080:8080 calculator
    ```
-3. Then you can access the web app at http://localhost:8080 in browser (http://localhost:8080/api/calculator/ping)
+3. Then you can access the web app at http://localhost:8080/api/calculator/ping in browser
+
