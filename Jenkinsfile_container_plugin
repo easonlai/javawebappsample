@@ -17,7 +17,7 @@ node {
   stage('deploy') {
     def webAppResourceGroup = 'QooLab'
     def webAppName = 'qoocalculator'
-    def acrName = 'qoolabacr.azurecr.io'
+    def acrName = 'qoolabacr'
     def imageName = 'qoocalculator'
     // generate version, it's important to remove the trailing new line in git describe output
     def version = sh script: 'git describe | tr -d "\n"', returnStdout: true
