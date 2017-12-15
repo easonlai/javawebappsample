@@ -12,7 +12,7 @@ node {
     def webAppName = 'qoocalculator'
     def registryServer = 'https://qoolabacr.azurecr.io'
     def imageTag = sh script: 'git describe | tr -d "\n"', returnStdout: true
-    def imageName = "$registryServer/calculator"
-    azureWebAppPublish azureCredentialsId: 'qooSp', publishType: 'docker', resourceGroup: resourceGroup, appName: webAppName, dockerImageName: imageName, dockerImageTag: imageTag, dockerRegistryEndpoint: [credentialsId: 'acr', url: "http://$registryServer"]
+    def imageName = "$registryServer/qoocalculator"
+    azureWebAppPublish azureCredentialsId: 'qooSp', publishType: 'docker', resourceGroup: resourceGroup, appName: webAppName, dockerImageName: imageName, dockerImageTag: imageTag, dockerRegistryEndpoint: [credentialsId: '83964f82-a1ec-4028-9f4d-bb6e29a5f2b9', url: "http://$registryServer"]
   }
 }
