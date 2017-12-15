@@ -13,7 +13,7 @@ public class CalculatorService {
     @Path("ping")
     @Produces(MediaType.TEXT_PLAIN)
     public String ping() {
-        return "Welcome to Java Web App!!! This is updated via Jenkins with Pipeline build number 9!\n" + new Date().toString();
+        return "Welcome to Java Web App!!! This is updated via Jenkins with Pipeline build number 10!\n" + new Date().toString();
     }
 
     @GET
